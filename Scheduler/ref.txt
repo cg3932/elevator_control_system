@@ -1,0 +1,76 @@
+
+00000100000  UpCall floor 0
+00000100001  UpCall floor 1
+00000100100  UpCall floor 4
+00000100101  UpCall floor 5
+00000100111  UpCall floor 7
+00000101010  UpCall floor 10
+00000101100  UpCall floor 12
+00000101111  UpCall floor 15
+00000110001  UpCall floor 17
+00000110011  UpCall floor 19
+00000110100  UpCall floor 20
+                          
+00001000000  DnCall floor 0
+00001000001  DnCall floor 1
+00001000100  DnCall floor 4
+00001000101  DnCall floor 5
+00001000111  DnCall floor 7
+00001001010  DnCall floor 10
+00001001100  DnCall floor 12
+00001001111  DnCall floor 15
+00001010001  DnCall floor 17
+00001010011  DnCall floor 19
+00001010100  DnCall floor 20
+
+00001100000  gotoFloor floor 0  e1
+00001100001  gotoFloor floor 1  e1
+00001100100  gotoFloor floor 4  e1
+00001100101  gotoFloor floor 5  e1
+00001100111  gotoFloor floor 7  e1
+00001101010  gotoFloor floor 10 e1
+00001101100  gotoFloor floor 12 e1
+00001101111  gotoFloor floor 15 e1
+00001110001  gotoFloor floor 17 e1
+00001110011  gotoFloor floor 19 e1
+00001110100  gotoFloor floor 20 e1
+
+00101100000  gotoFloor floor 0  e2
+00101100001  gotoFloor floor 1  e2
+00101100100  gotoFloor floor 4  e2
+00101100101  gotoFloor floor 5  e2
+00101100111  gotoFloor floor 7  e2
+00101101010  gotoFloor floor 10 e2
+00101101100  gotoFloor floor 12 e2
+00101101111  gotoFloor floor 15 e2
+00101110001  gotoFloor floor 17 e2
+00101110011  gotoFloor floor 19 e2
+00101110100  gotoFloor floor 20 e2
+
+01001100000  gotoFloor floor 0  e3
+01001100001  gotoFloor floor 1  e3
+01001100100  gotoFloor floor 4  e3
+01001100101  gotoFloor floor 5  e3
+01001100111  gotoFloor floor 7  e3
+01001101010  gotoFloor floor 10 e3
+01001101100  gotoFloor floor 12 e3
+01001101111  gotoFloor floor 15 e3
+01001110001  gotoFloor floor 17 e3
+01001110011  gotoFloor floor 19 e3
+01001110100  gotoFloor floor 20 e3
+
+00010010100  Open  e1
+00110010100  Open  e2
+01010010100  Open  e3
+
+00010110100  Close  e1
+00110110100  Close  e2
+01010110100  Close  e3
+
+00011010100  CancelFloor  e1 20
+00111001111  CancelFloor  e2 15
+01011000001  CancelFloor  e3 1
+
+00011110100  AlarmToggle  e1 
+00111101111  AlarmToggle  e2 
+01011100001  AlarmToggle  e3 

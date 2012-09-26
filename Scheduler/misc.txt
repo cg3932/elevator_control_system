@@ -1,0 +1,29 @@
+Serial.println(callStatus);
+			//***************************
+			// Give preference to the passengers opting for the direction the elevator was called for :: TRICKY Part
+    		//Note :loop index must start from 1
+			if(callStatus=="DOWN")
+			{
+			 int k;
+			 for(k=1;k<floorSize;++k)
+			 if(floorQueue[k]>floorQueue[0])
+			 {
+			   //add the floor at the end
+			   add(floorQueue[k]);
+			   //remove it from the beginning
+			   remove(floorQueue[k]);
+			 }
+			}
+			else if(callStatus=="UP")
+			{Serial.println("Here");
+			 int k;
+			 for(k=1;k<floorSize;++k)
+			 if(floorQueue[k]<floorQueue[0])
+			 {
+			   //add the floor at the end
+			   add(floorQueue[k]);
+			   //remove it from the beginning
+			   remove(floorQueue[k]);
+			 }
+			}
+			//***************************
